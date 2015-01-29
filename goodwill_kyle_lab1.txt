@@ -1,0 +1,41 @@
+CS471 - Programming Languages
+Kyle Goodwill
+Lab1
+
+include <stdio.h>
+  char a1 = one ; //<<< (1) 
+  int arr[10];
+  long fr; nx; //<<< (2)
+  long a; 123abc; //<<< (3)
+  int flag =0;
+
+  int chg(char * f)  {
+        if (f = 0) { //<<< (4)
+            int x = 10; 
+            arr[10] = 1; //<<< (5)
+        } else {
+            arr[flag] = 1;
+        }
+        x = ++flag ; //<<< (6)
+        return flag;
+  }
+  int main (void){
+      char one ='1';  
+      int restrict = flag++ ; //<<< (7)
+      a = "abcd"; //<<< (8)
+      printf("Begin:: ");
+      chg(a);
+      if (restrict) return 0; else return 100; //<<< (9)    
+    }
+
+(1) Lexical - "one" is not a char, the variable one is undeclared
+(2) Static Semantic - nx is undeclared
+(3) Lexical - You can't start a variable name with a number
+(4) Logical - Doing assignment instead of comparison 
+(5) Dynamic Semantic - Null pointer exception, there is no such thing as arr[10]
+(6) Static Semantic - x is out of scope
+(7) Syntactical - restrict is a keyword in C
+(8) Static Semantic- Type mismatch, a is declared as long
+(9) Syntactical - restrict is a keyword in C
+
+
